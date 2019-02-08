@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -8,7 +8,7 @@ using Web.Models;
 
 namespace Web.Controllers
 {
-    public class HomeController : Controller
+    public class CarController : Controller
     {
         public IActionResult Index()
         {
@@ -21,11 +21,11 @@ namespace Web.Controllers
         }
         public IActionResult About()
         {
-            return Content("Hi this is sandeep devineni");
+            return Content("Welcome to my c# page");
         }
         public IActionResult JsonReturn()
         {
-            return Json(new {name = "Sandeep", nickname = "Vin Petrol"});
+            return Json(new { name = "Sandeep devineni", nickname = "sandy" });
         }
         public IActionResult HtmlReturn()
         {
